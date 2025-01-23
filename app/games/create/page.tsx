@@ -1,7 +1,8 @@
-import Breadcrumbs from '../../components/breadcrumbs';
-import CreateGameForm from './components/form';
+import { Breadcrumbs } from '@/app/components';
 
-export default async function Page() {
+import { GameForm } from '../components';
+
+export default function Page() {
     return (
         <main>
             <Breadcrumbs
@@ -10,7 +11,7 @@ export default async function Page() {
                     { label: 'Create', href: '/games/create', active: true },
                 ]}
             />
-            <CreateGameForm />
+            <GameForm />
         </main>
     )
 }

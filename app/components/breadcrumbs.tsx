@@ -7,7 +7,7 @@ interface Breadcrumb {
   active?: boolean;
 }
 
-export default function Breadcrumbs({
+export function Breadcrumbs({
   breadcrumbs,
 }: {
   breadcrumbs: Breadcrumb[];
