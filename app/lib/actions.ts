@@ -18,7 +18,7 @@ export async function getGames(query: string, currentPage: number) {
             ]
         },
         skip: (currentPage - 1) * 10,
-        take: 12
+        take: 10
     });
 }
 
